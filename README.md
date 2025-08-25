@@ -27,15 +27,15 @@ This project includes pages like **Home, About, Services, Blog**, and **Post Det
 ## 🚀 Getting Started
 
 1. Clone this repository:
-```bash
+```
 git clone https://github.com/zekra171/agency-tailwind.git
-
+```
 2 Open any HTML file in your browser
 3 For production with Tailwind CLI:
 ```
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init
-
+```
 📷 Images
 ---
 Some images are loaded from Unsplash placeholders. You can replace them with your own images in the assets/images/ folder.
