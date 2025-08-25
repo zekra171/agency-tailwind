@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agency - About</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { container: { center: true, padding: "1rem" } } },
+      darkMode: 'class'
+    }
+  </script>
+</head>
+<body class="text-slate-700 antialiased">
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+  <nav class="container flex items-center justify-between py-3">
+    <a class="flex items-center gap-2 font-semibold">
+      <span class="text-indigo-600">●</span>Agency
+    </a>
+    <button id="navToggle" class="md:hidden p-2 rounded border border-slate-300">Menu</button>
+    <ul class="hidden md:flex items-center gap-6">
+      <li><a class="hover:text-indigo-600" href="index.html">Home</a></li>
+      <li><a class="hover:text-indigo-600" href="about.html">About</a></li>
+      <li><a class="hover:text-indigo-600" href="services.html">Services</a></li>
+      <li><a class="hover:text-indigo-600" href="blog.html">Blog</a></li>
+      <li><a class="inline-flex items-center rounded-md bg-indigo-600 text-white px-4 py-2 hover:bg-indigo-700" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Mobile drawer -->
+  <div id="mobileNav" class="md:hidden hidden border-t border-slate-200">
+    <ul class="container py-3 grid gap-3">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a class="inline-flex items-center rounded-md bg-indigo-600 text-white px-4 py-2 w-max" href="#contact">Contact</a>
+    </ul>
+  </div>
+</header>
+
+<!-- Breadcrumb -->
+<nav class="bg-slate-50 border-b border-slate-200">
+  <ol class="container flex items-center gap-2 py-3 text-sm">
+    <li><a class="text-slate-600 hover:text-indigo-600" href="index.html">Home</a></li>
+    <li class="text-slate-400">/</li>
+    <li class="text-slate-800 font-medium">About</li>
+  </ol>
+</nav>
+
+<!-- Hero -->
+<section class="relative bg-slate-100 py-16">
+  <div class="container grid md:grid-cols-2 items-center gap-8">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">About <span class="text-indigo-600">Our Agency</span></h1>
+      <p class="mt-4 text-slate-600">We are a creative team passionate about building websites that make an impact.</p>
+    </div>
+    <div class="aspect-[16/10] md:aspect-[4/3] rounded-2xl overflow-hidden">
+      <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="About Image">
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="container py-12 grid sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+  <div>
+    <h3 class="text-3xl font-bold text-indigo-600">120+</h3>
+    <p class="text-slate-600 mt-2">Projects Completed</p>
+  </div>
+  <div>
+    <h3 class="text-3xl font-bold text-indigo-600">80+</h3>
+    <p class="text-slate-600 mt-2">Happy Clients</p>
+  </div>
+  <div>
+    <h3 class="text-3xl font-bold text-indigo-600">15</h3>
+    <p class="text-slate-600 mt-2">Team Members</p>
+  </div>
+  <div>
+    <h3 class="text-3xl font-bold text-indigo-600">5</h3>
+    <p class="text-slate-600 mt-2">Years of Experience</p>
+  </div>
+</section>
+
+<!-- Team -->
+<section class="container py-12">
+  <h2 class="text-2xl font-bold text-center">Meet the Team</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+    <div class="text-center p-6 border rounded-2xl">
+      <img class="w-20 h-20 mx-auto rounded-full object-cover" src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe" alt="Jane Doe">
+      <h4 class="mt-3 font-semibold">Jane Doe</h4>
+      <p class="text-slate-500 text-sm">CEO</p>
+      <div class="mt-3 flex justify-center gap-3 text-slate-400">
+        <a class="hover:text-indigo-600">in</a>
+        <a class="hover:text-indigo-600">X</a>
+        <a class="hover:text-indigo-600">fb</a>
+      </div>
+    </div>
+    <div class="text-center p-6 border rounded-2xl">
+      <img class="w-20 h-20 mx-auto rounded-full object-cover" src="https://images.unsplash.com/photo-1502767089025-6572583495b0" alt="John Smith">
+      <h4 class="mt-3 font-semibold">John Smith</h4>
+      <p class="text-slate-500 text-sm">Lead Designer</p>
+      <div class="mt-3 flex justify-center gap-3 text-slate-400">
+        <a class="hover:text-indigo-600">in</a>
+        <a class="hover:text-indigo-600">X</a>
+        <a class="hover:text-indigo-600">fb</a>
+      </div>
+    </div>
+    <div class="text-center p-6 border rounded-2xl">
+      <img class="w-20 h-20 mx-auto rounded-full object-cover" src="https://images.unsplash.com/photo-1502764613149-7f1d229e230f" alt="Alice Lee">
+      <h4 class="mt-3 font-semibold">Alice Lee</h4>
+      <p class="text-slate-500 text-sm">Developer</p>
+      <div class="mt-3 flex justify-center gap-3 text-slate-400">
+        <a class="hover:text-indigo-600">in</a>
+        <a class="hover:text-indigo-600">X</a>
+        <a class="hover:text-indigo-600">fb</a>
+      </div>
+    </div>
+    <div class="text-center p-6 border rounded-2xl">
+      <img class="w-20 h-20 mx-auto rounded-full object-cover" src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91" alt="Bob Brown">
+      <h4 class="mt-3 font-semibold">Bob Brown</h4>
+      <p class="text-slate-500 text-sm">Marketing</p>
+      <div class="mt-3 flex justify-center gap-3 text-slate-400">
+        <a class="hover:text-indigo-600">in</a>
+        <a class="hover:text-indigo-600">X</a>
+        <a class="hover:text-indigo-600">fb</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer (copy from index.html) -->
+<footer class="bg-slate-900 text-slate-300 mt-16">
+  <div class="container py-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div>
+      <h3 class="font-semibold text-white">Agency</h3>
+      <p class="mt-3 text-sm">Short brand story…</p>
+    </div>
+    <div>
+      <h4 class="font-semibold text-white">Links</h4>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li><a class="hover:text-white" href="about.html">About</a></li>
+        <li><a class="hover:text-white" href="services.html">Services</a></li>
+        <li><a class="hover:text-white" href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold text-white">Follow</h4>
+      <div class="mt-3 flex gap-3">
+        <a class="hover:text-white">in</a><a class="hover:text-white">X</a><a class="hover:text-white">fb</a>
+      </div>
+    </div>
+    <div>
+      <h4 class="font-semibold text-white">Newsletter</h4>
+      <form class="mt-3 flex gap-2">
+        <input class="min-w-0 flex-1 rounded-md border border-slate-700 bg-slate-800 text-slate-100 placeholder-slate-400" placeholder="Email">
+        <button class="px-4 rounded-md bg-indigo-600 text-white">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="border-t border-slate-800">
+    <div class="container py-4 text-sm text-slate-400">&copy; 2025 Agency. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  navToggle.onclick = () => mobileNav.classList.toggle('hidden');
+</script>
+</body>
+</html>
